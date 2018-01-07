@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.home.shaakya.material.MainActivity" >
+
+    <item
+        android:id="@+id/menu_share"
+        app:showAsAction="withText"
+        android:title="Share"/>
+    <item
+        android:id="@+id/menu_save"
+        android:title="Save"     
+        android:icon="@drawable/save"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/menu_old_meme_list"
+        app:showAsAction="withText"
+        android:title="List of Meme"/>
+
+   <item
+        android:id="@+id/select_logo"
+        app:showAsAction="withText"
+        android:title="Logo Info"/>
+
+
+
+</menu>

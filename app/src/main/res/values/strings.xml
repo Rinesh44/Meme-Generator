@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="sortAsc">Sort Ascending</string>
+    <string name="insert">Insert Logo</string>
+    <string name="sortDes">Sort Descending</string>
+    <string name="next">Next</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello World!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="app_name">PhotoAPP</string>
+    <color name="action_bar_color">#3E50B4</color>
+    <color name="btn_pressed_color">#2E4B87</color>
+</resources>

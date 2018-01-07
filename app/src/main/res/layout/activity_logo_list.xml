@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <View
+        android:id="@+id/elevation"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/app_bar"
+        android:background="@drawable/shadow">
+
+    </View>
+
+    <GridView
+        android:id="@+id/list_of_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/elevation"
+        android:columnWidth="60dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        />
+
+</RelativeLayout>

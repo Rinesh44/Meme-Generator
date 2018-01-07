@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.home.shaakya.material.MainActivity"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/shadow"
+                android:id="@+id/elevation"
+                android:layout_below="@+id/app_bar">
+
+            </View>
+
+
+        <ListView
+            android:id="@+id/meme_img_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/elevation" />
+        </RelativeLayout>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            app:fab_colorNormal="#F44336"
+            app:fab_colorRipple="#00BCD4"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_size="normal"
+            android:src="@mipmap/iconsortcamera"
+            android:layout_gravity="right|bottom"
+            android:onClick="onFabClick2"
+           >
+
+        </com.github.clans.fab.FloatingActionButton>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.home.shaakya.material.NavigationDrawerFragment"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+
+</android.support.v4.widget.DrawerLayout>

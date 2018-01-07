@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.home.shaakya.material.MainActivity" >
+
+    <item
+        android:id="@+id/position_topleft"
+        app:showAsAction="withText"
+        android:title="Position at Topleft"/>
+
+    <item
+        android:id="@+id/position_topright"
+        app:showAsAction="withText"
+        android:title="Position at Topright"/>
+
+    <item
+        android:id="@+id/position_bottomleft"
+        app:showAsAction="withText"
+        android:title="Position at Bottomleft"/>
+</menu>
